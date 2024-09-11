@@ -6,7 +6,6 @@ export class AppService {
   constructor(private readonly configService: ConfigService) {}
 
   getHello(): string {
-    console.log(this.configService.testValues);
     return 'Hello World!';
   }
 }

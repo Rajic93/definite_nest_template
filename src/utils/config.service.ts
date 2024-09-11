@@ -2,9 +2,14 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 class ConfigService {
-  get testValues() {
+  static get swaggerSetup() {
     return {
-      TEST_VALUE: process.env.TEST_VALUE,
+      title: 'Definite Nest template',
+      description:
+        'This template is meant to save you time and get to work in no time',
+      version: '1.0',
+      tags: [],
+      path: '/api',
     };
   }
 }
